@@ -8,7 +8,7 @@ Gracias a la **realidad aumentada**, pueden explorar su flora y fauna de forma m
 ## Objetivo
 
 Crear una experiencia turística interactiva y educativa que combine naturaleza, tecnología y el mundo cúbico de Minecraft.  
-La página está diseñada para ser clara, visual y atractiva, sobre todo para jóvenes exploradores.
+La página está diseñada para ir causando intriga en el publico antes del resultado final.
 
 ---
 
