@@ -1,18 +1,18 @@
 Happy Traveler – Minecraft Edition
 
-**Happy Traveler – Minecraft Edition** es una landing page pensada como proyecto educativo, donde los usuarios pueden embarcarse en una aventura por los biomas más increíbles del universo Minecraft.  
+**Happy Traveler – Minecraft Edition** es una landing page pensada como proyecto innovador, donde los usuarios pueden embarcarse en una aventura por los biomas más increíbles del universo Minecraft.  
 Gracias a la **realidad aumentada**, pueden explorar su flora y fauna de forma muy realista.
 
 ---
 
-##Objetivo
+## Objetivo
 
 Crear una experiencia turística interactiva y educativa que combine naturaleza, tecnología y el mundo cúbico de Minecraft.  
 La página está diseñada para ser clara, visual y atractiva, sobre todo para jóvenes exploradores.
 
 ---
 
-##Tecnologías y recursos usados
+## Tecnologías y recursos usados
 
 - **HTML5** y **CSS3**  
 - **Inteligencia Artificial** para generar imágenes personalizadas y adquirir conocimientos técnicos durante el desarrollo  
