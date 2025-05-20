@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Traveler - Minecraft Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+
+</head>
+<body>
+    
+    <div class="encabezado">
+        <div class="contenedor_logo">
+            <img src="img/ChatGPT Image 20 may 2025, 09_48_35 1.png" alt="Happy Traveler Minecraft Edition" class="logo_principal">
+            <div class="iconos_minecraft">
+                <img src="img/6t 1.png" alt="Home" class="icono_minecraft icono_home">
+                <img src="img/destinos 1.png" alt="Biomas" class="icono_minecraft icono_biomas">
+                <img src="img/steve 1.png" alt="Usuario" class="icono_minecraft icono_usuario">
+                <img src="img/ajustes 1.png" alt="Ajustes" class="icono_minecraft icono_ajustes">
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion_bienvenida">
+        <img src="img/BIenvenidos-20-5-2025 1.png" alt="Bienvenidos"class="titulo_imagen">
+        <p class="texto_bienvenida">Embárcate en una <strong>aventura turística</strong> mediante nuestra avanzada realidad aumentada única por los paisajes más increíbles del mundo cúbico.
+        
+    </div>
+
+    <img class="imagen_caracteristicas" src="img/cherry-blossom-biome-in-hd-and-rtx-v0-gdqf4fr6s1na1 1.png" alt="Imagen_abejas">
+    
+   
+    <div class="texto_explorar">
+        <p>Explora los destinos más exóticos del universo Minecraft con <strong>Happy Traveler</strong>.</p>
+    </div>
+
+    <div class="contenedor_botones">
+        <a href="#biomas" class="boton">BIOMAS</a>
+        <a href="#reserva" class="boton">EMPEZAR VIAJE</a>
+    </div>
+
+    <div class="separador"></div>
+
+    <div class="seccion_biomas" id="biomas">
+        <img src="img/UN-PEQUE-O-VISTAZO-20-5-2025 1.png" alt="Un pequeño vistazo" class="titulo_imagen">
+
+        <div class="galeria_biomas">
+            <div class="bioma active">
+                <img src="img/1366_2000 1.png" alt="Desierto de Arenisca">
+                <div class="info_bioma">
+                    <h3 class="titulo_bioma">Desierto de Arenisca:</h3>
+                    <p class="descripcion_bioma">Misteriosos templos, vastas dunas y una luz dorada que hará de cada paso una postal. Ideal para aventureros sedientos de historia.</p>
+                </div>
+            </div>
+            <div class="bioma">
+                <img src="img/maxresdefault 1.png" alt="Bosque oscuro">
+                <div class="info_bioma">
+                    <h3 class="titulo_bioma">Bosque oscuro:</h3>
+                    <p class="descripcion_bioma">Un lugar para valientes. Árboles gigantes, setas mágicas y leyendas antiguas se mezclan en este bioma de misterio.</p>
+                </div>
+            </div>
+            <div class="controles_galeria">
+                <button class="control_prev">❮</button>
+                <button class="control_next">❯</button>
+            </div>
+        </div>
+
+        <img src="img/Reserva-tu-aventura-20-5-2025 1.png" alt="Reserva tu aventura" class="titulo_imagen" id="reserva">
+        
+        <form class="formulario_reserva">
+            <div class="campo_formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Valor">
+            </div>
+            
+            <div class="campo_formulario">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" placeholder="Valor">
+            </div>
+            
+            <div class="campo_formulario">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Valor">
+            </div>
+            
+            <div class="campo_formulario">
+                <label for="mensaje">Mensaje (Opcional)</label>
+                <textarea id="mensaje" placeholder="Valor"></textarea>
+            </div>
+            
+            <button type="submit" class="boton_reserva">Reserva tu aventura</button>
+        </form>
+    </div>
+
+    <footer class="pie_pagina">
+        <p class="texto_agradecimiento">Gracias por confiar en Happy Traveler</p>
+        
+        <div class="informacion_contacto">
+            <div class="contactos">
+                <h4>Contactos:</h4>
+                <ul class="lista_contactos">
+                    <li>Número: 643205985</li>
+                    <li>Email: minetraveler@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="redes_sociales">
+                <h4>Redes:</h4>
+                <div class="iconos_redes">
+                    <a href="#" class="icono_red"><img src="img/instagram 1.png" alt="Instagram"></a>
+                    <a href="#" class="icono_red"><img src="img/tik-tok 1.png" alt="TikTok"></a>
+                    <a href="#" class="icono_red"><img src="img/gorjeo 1.png" alt="Twitter"></a>
+                    <a href="#" class="icono_red"><img src="img/youtube 1.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const biomas = document.querySelectorAll('.bioma');
+            const prevButton = document.querySelector('.control_prev');
+            const nextButton = document.querySelector('.control_next');
+            let currentIndex = 0;
+
+            function updateBiomas() {
+                biomas.forEach((bioma, index) => {
+                    bioma.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + biomas.length) % biomas.length;
+                updateBiomas();
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % biomas.length;
+                updateBiomas();
+            });
+
+            updateBiomas();
+        });
+    </script>
+</body>
+</html>
