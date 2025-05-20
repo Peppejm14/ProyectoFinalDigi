@@ -44,7 +44,7 @@ body {
 }
 
 .logo_principal {
-    max-width: 300px; /* Ajusta el tamaño del logo */
+    max-width: 300px; 
     margin: 0 auto;
     display: block;
 }
@@ -52,40 +52,38 @@ body {
 .iconos_minecraft {
     position: absolute;
     bottom: 20px;
-    right: -10px; /* Ajusta la posición de los iconos */
+    right: -10px;
     display: flex;
-    gap: 10px; /* Espaciado entre los iconos */
-    z-index: 10; /* Asegura que los iconos estén por encima del fondo */
+    gap: 10px; 
+    z-index: 10; 
 }
 
 .icono_minecraft {
     width: 70px;
     height: 70px;
-    border-radius: 50%; /* Bordes redondeados */
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: 70%; /* Ajusta el tamaño del contenido del icono */
+    background-size: 70%; 
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid transparent; /* Borde transparente por defecto */
-    padding: 3px; /* Reduce el espacio alrededor del icono */
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    border: 1px solid transparent; 
+    padding: 3px; 
+    transition: border-color 0.3s ease, transform 0.3s ease; 
     cursor: pointer;
 }
 
 .icono_minecraft:hover {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+    transform: scale(1.1); 
 }
 
 .icono_minecraft:focus {
-    border-color: #007BFF; /* Borde azul al seleccionar */
-    outline: none; /* Elimina el borde predeterminado del navegador */
+    border-color: #007BFF; 
+    outline: none; 
 }
 
 
-
-/* Sección de bienvenida */
 .seccion_bienvenida {
     text-align: center;
     padding: 30px 15px;
@@ -131,7 +129,6 @@ body {
     background-color: white;
 }
 
-/* Botones */
 .contenedor_botones {
     display: flex;
     justify-content: center;
@@ -144,8 +141,8 @@ body {
 }
 
 .boton {
-    background-color: #ffcc00; /* Color amarillo brillante */
-    color: #fff; /* Texto blanco */
+    background-color: #ffcc00;
+    color: #fff;
     padding: 15px 25px;
     border: 2px solid #000;
     font-size: 18px;
@@ -155,15 +152,15 @@ body {
     border-radius: 10px;
     transition: all 0.3s ease;
     width: 150px;
-    text-align: center; /* Centra el texto horizontalmente */
-    display: flex; /* Cambia a flexbox */
-    align-items: center; /* Centra el texto verticalmente */
-    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 .boton:hover {
-    background-color: #ffaa00; /* Color más oscuro al pasar el cursor */
-    transform: scale(1.05); /* Efecto de agrandamiento */
+    background-color: #ffaa00; 
+    transform: scale(1.05); 
 }
 
 .separador {
@@ -172,7 +169,6 @@ body {
     margin: 20px 0;
 }
 
-/* Galería de biomas */
 .seccion_biomas {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -236,13 +232,13 @@ body {
 }
 
 .formulario_reserva {
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #f9f9f9; 
     padding: 25px;
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 15px; /* Bordes redondeados */
+    border: 1px solid #ddd; 
+    border-radius: 15px; 
     max-width: 400px;
-    margin: 20px auto; /* Centra el formulario */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
@@ -262,7 +258,7 @@ body {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px;
     font-size: 14px;
     color: #555;
     background-color: #fff;
@@ -270,9 +266,9 @@ body {
 }
 
 .campo_formulario input:focus, .campo_formulario textarea:focus {
-    border-color: #007BFF; /* Borde azul al enfocar */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
-    outline: none; /* Elimina el borde predeterminado */
+    border-color: #007BFF; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none; 
 }
 
 .campo_formulario textarea {
@@ -281,11 +277,11 @@ body {
 }
 
 .boton_reserva {
-    background-color: #007BFF; /* Azul moderno */
+    background-color: #007BFF; 
     color: #fff;
     padding: 12px 20px;
     border: none;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px; 
     font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
@@ -295,8 +291,8 @@ body {
 }
 
 .boton_reserva:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
-    transform: scale(1.02); /* Efecto de agrandamiento */
+    background-color: #0056b3;
+    transform: scale(1.02); 
 }
 
 .pie_pagina {
@@ -343,7 +339,7 @@ body {
     border-radius: 4px;
     margin: 0 5px;
     transition: transform 0.3s ease;
-    background-color: #ccc; /* Color de fondo temporal para depuración */
+    background-color: #ccc; 
 }
 
 .iconos_red img:hover {
